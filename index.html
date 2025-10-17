@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 95vh;
+            font-family: "sono", sans-serif;
+            font-weight: bolder;
+        }
+        .container{
+            flex: 1;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        
+         } 
+        .card{
+            padding: 20px;
+            margin: 20px;
+            background-color: aliceblue;
+            display: inline-block;
+            max-width: 450px;
+            width: 280px;
+            height: 200px;
+            text-align: center;
+        }
+        .card-name{
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        .card-price{
+            font-size: 35px;
+        }
+        .card-features{
+            list-style: none;
+            padding: 20px;
+            margin-bottom: 0px;
+            margin-top: 2px;
+            
+        }
+        li{
+            padding-bottom: 4px;
+        }
+        button{
+            height: 27px;
+            border: none;
+            border-radius: 2px;
+            background-color: rgb(255, 153, 0);
+        }
+        button:hover{
+            background-color: rgb(255, 175, 54);
+        }
+        button:active{
+            background-color: rgb(222, 134, 2);
+        } 
+
+        @media (max-width: 1012px){
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+            .card{
+                display: block;
+                width: 100%;
+                width: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-name">Basic</div>
+            <div class="card-price">9.99$</div>
+            <ul class="card-features">
+                <li>3 Months</li>
+                <li>Indivual</li>
+                <li>Anytime Cancle</li>
+            </ul>
+            <div class="button"><button>sign up</button></div>
+        </div>
+        <div class="card">
+              <div class="card-name">Standard</div>
+            <div class="card-price">19.99$</div>
+            <ul class="card-features">
+                <li>8 Months</li>
+                <li>Dual</li>
+                <li>Anytime Cancle</li>
+            </ul>
+            <div class="button"><button>sign up</button></div>
+        </div>
+        <div class="card">
+              <div class="card-name">Premium</div>
+            <div class="card-price">29.99$</div>
+            <ul class="card-features">
+                <li>24 Months</li>
+                <li>Family</li>
+                <li>Anytime Cancle</li>
+            </ul>
+            <div class="button"><button>sign up</button></div>
+        </div>
+    </div>
+</body>
+</html>
